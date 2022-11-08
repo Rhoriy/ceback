@@ -1,13 +1,17 @@
 import os
 
-
 CELERY_TASK_SERIALIZER = 'json'
-BROKER_URL =  os.environ.get('REDISGREEN_URL', 'redis://localhost:6379/0')
-#BROKER_URL =  os.environ.get('redis://localhost:6379/0')
+#BROKER_URL =  os.environ.get('REDISGREEN_URL', 'redis://localhost:6379/0')
+BROKER_URL =  os.environ.get('REDISGREEN_URL')
+
 CELERY_ACCEPT_CONTENT = ['json']
-#CELERY_RESULT_BACKEND = 'redis://'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 
-#CELERY_RESULT_BACKEND = os.environ.get('REDIS_URL', 'redis://localhost:6379/0')
+AWS_ACCESS_KEY_ID = 'AKIAX7IW42VWFZVUAYUP'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'rhoriycelery'
 
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
