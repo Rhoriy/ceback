@@ -39,7 +39,7 @@ def hello():
      foo1 = pd.DataFrame({'title': ['Natura Homem NEO'], 'url': ['https://www.youtube.com/watch?v=aq7GZxmtzK4']})
 
      # list of strings
-     lst = ['Natura Homem NEO', 'https://www.youtube.com/watch?v=aq7GZxmtzK4']
+     lst = ['Novo Luna Coragem', 'https://www.youtube.com/watch?v=-EWjS3XgUIM']
 
      # Calling DataFrame constructor on list
      foo2 = pd.DataFrame(lst)
