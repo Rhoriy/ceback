@@ -56,7 +56,7 @@ def hello():
      #s3.Bucket('rhoriycelery').upload_file(Filename='bar.csv', Key='bar.csv')
 
      # Upload files to S3 bucket foo2
-     s3.Bucket('rhoriycelery').upload_file(Filename='foo4.csv', Key='foo4.csv')
+     s3.Bucket('rhoriycelery').upload_file(Filename='foo4.csv', Key='foo1.csv')
      #s3.Bucket('rhoriycelery').upload_file(Filename='bar.csv', Key='bar.csv')
 
      #for obj in s3.Bucket('rhoriycelery').objects.all():
