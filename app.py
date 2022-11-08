@@ -29,14 +29,14 @@ def resultce():
     #obj = s3.Bucket('rhoriycelery').Object('foo1.csv').get()
     #foo1 = pd.read_csv(obj['Body'], index_col=0)
 
-    obj = s3.Bucket('rhoriycelery').Object('foo2.csv').get()
-    foo2 = pd.read_csv(obj['Body'], index_col=0)
+    obj = s3.Bucket('rhoriycelery').Object('foo4.csv').get()
+    foo4 = pd.read_csv(obj['Body'], index_col=0)
 
-    print('ffo2:', foo2)
+    print('ffo4:', foo4)
 
     #title = foo2[0]
-    url = foo2.loc[1].item()
-    title = foo2.loc[0].item()
+    url = foo4.loc[1].item()
+    title = foo4.loc[0].item()
 
 
     #print('title:', title)
