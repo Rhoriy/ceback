@@ -42,32 +42,32 @@ def hello():
      lst = ['Novo Luna Coragem', 'https://www.youtube.com/watch?v=-EWjS3XgUIM']
 
      # Calling DataFrame constructor on list
-     foo2 = pd.DataFrame(lst)
+     foo4 = pd.DataFrame(lst)
 
 
      # Save to csv
      #foo1.to_csv('foo1.csv')
      #bar.to_csv('bar.csv')
 
-     foo2.to_csv('foo2.csv')
+     foo4.to_csv('foo4.csv')
 
      # Upload files to S3 bucket
      #s3.Bucket('rhoriycelery').upload_file(Filename='foo1.csv', Key='foo1.csv')
      #s3.Bucket('rhoriycelery').upload_file(Filename='bar.csv', Key='bar.csv')
 
      # Upload files to S3 bucket foo2
-     s3.Bucket('rhoriycelery').upload_file(Filename='foo2.csv', Key='foo2.csv')
+     s3.Bucket('rhoriycelery').upload_file(Filename='foo4.csv', Key='foo4.csv')
      #s3.Bucket('rhoriycelery').upload_file(Filename='bar.csv', Key='bar.csv')
 
      #for obj in s3.Bucket('rhoriycelery').objects.all():
         #print(obj)
 
      # Load csv file directly into python foo
-     obj = s3.Bucket('rhoriycelery').Object('foo2.csv').get()
-     foo2 = pd.read_csv(obj['Body'], index_col=0)
+     obj = s3.Bucket('rhoriycelery').Object('foo4.csv').get()
+     foo4 = pd.read_csv(obj['Body'], index_col=0)
 
      #print(obj)
 
      #print(type(foo2))
 
-     print(foo2)
+     print(foo4)
