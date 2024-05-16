@@ -1,7 +1,6 @@
-
 {
-  "name": "ceback",
-  "description": "Teste Heroku Button",
+  "name": "Ceback",
+  "description": "Teste de Heroku Button",
   "repository": "https://github.com/Rhoriy/ceback",
   "logo": "https://node-js-sample-1234567890ab.herokuapp.com/node.png",
   "keywords": ["node", "express", "static"]
