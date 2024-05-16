@@ -1,7 +1,7 @@
 {
   "name": "ceback",
   "description": "Teste Heroku Button",
-  "repository": "https://github.com/seu-usuario/seu-repositorio",
+  "repository": "https://github.com/Rhoriy/ceback",
   "logo": "https://exemplo.com/logo.png",
   "keywords": ["heroku", "python"],
   "scripts": {
