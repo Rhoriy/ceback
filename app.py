@@ -22,8 +22,8 @@ def resultce():
     s3 = boto3.resource(
         service_name='s3',
         region_name='us-east-1',
-        aws_access_key_id='AKIAX7IW42VWFZVUAYUP',
-        aws_secret_access_key='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'
+        aws_access_key_id='',
+        aws_secret_access_key=''
     )
 
     '''
