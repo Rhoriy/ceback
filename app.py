@@ -14,6 +14,8 @@ def index():
 @app.route('/result_ce')
 def resultce():
     print('Cheguei CE')
+
+    '''
     
     import boto3
     import pandas as pd
@@ -46,6 +48,8 @@ def resultce():
 
     #print('foo1:', foo1)
 
+    '''
+
     from pytube import YouTube
 
     url = 'https://www.youtube.com/watch?v=PnDQaP3zHV4'
@@ -64,8 +68,8 @@ def resultce():
     print("Download concluído!")
     down = 'Download concluído!'
     
-    return render_template('result.html', title=title, url=url, down=down)
-    
+    #return render_template('result.html', title=title, url=url, down=down)
+    return render_template('result.html', down=down)    
   
     #return 'OK CE'
 
