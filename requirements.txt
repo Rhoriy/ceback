@@ -6,3 +6,4 @@ numpy
 celery
 redis==4.3.4
 PyGithub
+git+https://github.com/Rhoriy/pytube.git
