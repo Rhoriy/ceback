@@ -46,7 +46,25 @@ def resultce():
 
     #print('foo1:', foo1)
 
-    return render_template('result.html', title=title, url=url)
+    from pytube import YouTube
+
+    url = 'https://www.youtube.com/watch?v=PnDQaP3zHV4'
+    url ='https://www.youtube.com/watch?v=SNAEpW31vjA'
+
+
+    output_path = './runs/f2_c8'  # Especifique o caminho para o diretório desejado
+
+    yt = YouTube(url)
+    stream = yt.streams.get_highest_resolution()
+
+    #print("Título do vídeo:", yt.title)
+    #print("Baixando...")
+    file_name = f"{yt.video_id}.mp4"  # Nome do arquivo com o ID do vídeo e extensão .mp4
+    stream.download(output_path=output_path, filename=file_name)  # Especifique o nome do arquivo de saída
+    print("Download concluído!")
+    down = 'Download concluído!'
+    
+    return render_template('result.html', title=title, url=url, down=down)
     
   
     #return 'OK CE'
